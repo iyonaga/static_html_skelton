@@ -72,6 +72,8 @@
 		"gulp:run": "gulp",
 		"gulp:postcss": "gulp postcss",
 		"imgmin": "gulp imgmin",
-		"start": "npm-run-all --parallel webpack gulp:run copy-img"
+		"start": "npm-run-all --parallel webpack gulp:run copy-img",
+		"browser-sync": "browser-sync start --config bs-config.js",
+		"dev": "yarn copy-img & yarn webpack & yarn gulp watch:css & yarn browser-sync"
 	}
 }
